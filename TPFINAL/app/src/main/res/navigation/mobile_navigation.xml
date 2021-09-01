@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/almuerzoFragment"
+        android:name="edu.neo.tpfinal.fragments.AlmuerzoFragment"
+        android:label="fragment_almuerzo"
+        tools:layout="@layout/fragment_almuerzo" >
+        <action
+            android:id="@+id/action_almuerzoFragment_to_premioFragment"
+            app:destination="@id/premioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="edu.neo.tpfinal.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_almuerzoFragment"
+            app:destination="@id/almuerzoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_cenaFragment"
+            app:destination="@id/cenaFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_desayunoFragment"
+            app:destination="@id/desayunoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_meriendaFragment"
+            app:destination="@id/meriendaFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_informesFragment"
+            app:destination="@id/informesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cenaFragment"
+        android:name="edu.neo.tpfinal.fragments.CenaFragment"
+        android:label="fragment_cena"
+        tools:layout="@layout/fragment_cena" >
+        <action
+            android:id="@+id/action_cenaFragment_to_premioFragment"
+            app:destination="@id/premioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/premioFragment"
+        android:name="edu.neo.tpfinal.fragments.PremioFragment"
+        android:label="fragment_premio"
+        tools:layout="@layout/fragment_premio" >
+        <action
+            android:id="@+id/action_premioFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/desayunoFragment"
+        android:name="edu.neo.tpfinal.fragments.DesayunoFragment"
+        android:label="fragment_desayuno"
+        tools:layout="@layout/fragment_desayuno" >
+        <action
+            android:id="@+id/action_desayunoFragment_to_premioFragment"
+            app:destination="@id/premioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/meriendaFragment"
+        android:name="edu.neo.tpfinal.fragments.MeriendaFragment"
+        android:label="fragment_merienda"
+        tools:layout="@layout/fragment_merienda" >
+        <action
+            android:id="@+id/action_meriendaFragment_to_premioFragment"
+            app:destination="@id/premioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/informesFragment"
+        android:name="edu.neo.tpfinal.fragments.InformesFragment"
+        android:label="fragment_informes"
+        tools:layout="@layout/fragment_informes" >
+        <action
+            android:id="@+id/action_informesFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

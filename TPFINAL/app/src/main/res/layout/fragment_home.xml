@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="15dp"
+    android:layout_height="wrap_content"
+    android:background="@color/md_teal_50"
+    android:orientation="vertical"
+    tools:context=".fragments.HomeFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bienvenidos! Aqui cargaras todas tus comidas para tener un control"
+        android:textAlignment="center"
+
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cena"
+            android:layout_width="150dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="50dp"
+            android:layout_height="100dp"
+            android:text="Cena" />
+
+        <Button
+            android:id="@+id/btn_desayuno"
+            android:layout_width="150dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_height="100dp"
+            android:text="Desayuno" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_almuerzo"
+            android:layout_width="150dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="50dp"
+            android:layout_height="100dp"
+            android:text="Almuerzo" />
+
+        <Button
+            android:id="@+id/btn_merienda"
+            android:layout_width="150dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_height="100dp"
+            android:text="Merienda" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_Informes"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="105dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Tus comidas" />
+    <Button
+        android:id="@+id/btn_CerrarSesion"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="105dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="cerrar sesion" />
+
+
+
+
+</LinearLayout>
